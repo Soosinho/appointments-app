@@ -1,0 +1,12 @@
+<div>
+    <input type="text" [formControl]="descricao">
+    <button (click)="create()">Criar</button>
+</div>
+
+<div class="list">
+    <div class="appointment" *ngFor="let appointment of appointments">
+        <p>Inicio: {{appointment.inicio}}</p>
+        <p>Fim: {{appointment.fim}}</p>
+        <p>Descrição: {{appointment.descricao}}</p>
+    </div>
+</div>
